@@ -110,7 +110,7 @@ const Navbar = () => {
               </ScrollLink>
             ))}
             <a
-              href="https://docs.google.com/document/d/1-Xn2fkZcjz1RAHqTEtBgQZpxyv_rC3wMGoUvX2sZLk0/edit?usp=sharing"
+              href={resumePdf}
               download="Praveen_Gupta_Resume.pdf"
               className={`flex items-center ${
                 isDark ? "text-gray-300 hover:text-purple-400" : "text-gray-700 hover:text-purple-600"

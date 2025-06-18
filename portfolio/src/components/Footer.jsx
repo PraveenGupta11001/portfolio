@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Mail, Phone, Github, Code } from "lucide-react";
+import { Mail, Phone, Github, Code, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const isDark = useSelector((state) => state.theme.isDark);
@@ -28,7 +28,7 @@ const Footer = () => {
               <Phone className="h-6 w-6" />
             </a>
             <a
-              href="https://github.com/praweengupta"
+              href="https://github.com/PraveenGupta11001?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className={`${
@@ -39,7 +39,18 @@ const Footer = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://leetcode.com/praweengupta"
+              href="http://www.linkedin.com/in/praveen-gupta-b783791b4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${
+                isDark ? "text-gray-300 hover:text-purple-400" : "text-gray-700 hover:text-purple-600"
+              } transition duration-300`}
+              title="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6" />
+            </a>
+            <a
+              href="https://leetcode.com/u/praweengupta11001/"
               target="_blank"
               rel="noopener noreferrer"
               className={`${
@@ -50,7 +61,7 @@ const Footer = () => {
               <Code className="h-6 w-6" />
             </a>
             <a
-              href="https://hackerrank.com/praweengupta"
+              href="https://www.hackerrank.com/profile/praweengupta1101"
               target="_blank"
               rel="noopener noreferrer"
               className={`${
