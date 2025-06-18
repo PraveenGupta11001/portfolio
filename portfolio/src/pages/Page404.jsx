@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -25,9 +26,9 @@ const Page404 = () => {
           <p className={`mt-2 ${isDark ? "text-gray-300" : "text-gray-700"}`}>Oops! The page you're looking for doesn't exist.</p>
           <Link
             to="/"
-            className="mt-6 inline-block px-6 py-3 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:from-purple-600 hover:to-pink-600"
+            className="mt-6 inline-block px-6 py-3 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-md hover:from-purple-600 hover:to-pink-600 transition duration-300"
           >
-            Back to Home
+            Go Back Home
           </Link>
         </motion.div>
       </motion.section>

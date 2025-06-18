@@ -51,7 +51,7 @@ const ContactMe = () => {
                 </p>
               </div>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ x: 100 }}
               animate={{ x: 0 }}
               transition={{ duration: 0.5 }}
@@ -101,7 +101,7 @@ const ContactMe = () => {
                   Send Message
                 </button>
               </form>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </motion.section>

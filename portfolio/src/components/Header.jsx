@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const isDark = useSelector((state) => state.theme.isDark);
@@ -35,12 +35,15 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mt-6"
         >
-          <Link
-            to="/projects"
-            className="inline-block px-6 py-3 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:from-purple-600 hover:to-pink-600 transition duration-300"
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={500}
+            spy={true}
+            className="inline-block px-6 py-3 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:from-purple-600 hover:to-pink-600 transition duration-300 cursor-pointer"
           >
             View My Projects
-          </Link>
+          </ScrollLink>
         </motion.div>
       </div>
     </motion.header>

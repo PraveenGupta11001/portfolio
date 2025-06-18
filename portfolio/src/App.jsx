@@ -14,7 +14,6 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay (e.g., for assets or initial setup)
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
