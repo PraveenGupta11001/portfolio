@@ -1,6 +1,6 @@
 export const projects = [
     {
-      name: "WeConnect - AI Chat Service",
+      name: "WeConnect - AI Chatbot & Chatting Service",
       description: "A real-time chat app built with React, Tailwind CSS, and Firebase Auth. The backend uses FastAPI with LLaMA 3, storing data in Firestore.",
       link: "https://we-connect-teal.vercel.app",
       note: "Backend may take 50-60 seconds to wake up due to free-tier limitations.",
