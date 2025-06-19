@@ -48,7 +48,7 @@ export default function App() {
           <AppRoutes />
           <Footer />
           <ToastContainer
-            position="bottom-right"
+            position="top-right"
             autoClose={3000}
             hideProgressBar
             theme={isDark ? "dark" : "light"}

@@ -1,55 +1,18 @@
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import { Mail, Phone, MapPin, Award } from "lucide-react";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import emailjs from '@emailjs/browser';
 
-const skills = [
-  "Python", "JavaScript", "HTML", "CSS", "SQL", "Docker", "Redis", "Celery",
-  "React JS", "Tailwind CSS", "FastAPI", "Django", "PostgreSQL", "MongoDB",
-  "Firebase", "Snowflake", "DBT", "Azure Data Factory", "AWS S3", "Scrum", "Jira",
-];
+import { skills } from "../data/skills";
+import { projects } from "../data/projects";
 
-const projects = [
-  {
-    name: "WeConnect - AI Chat Service",
-    description: "A real-time chat app built with React, Tailwind CSS, and Firebase Auth. The backend uses FastAPI with LLaMA 3, storing data in Firestore.",
-    link: "https://we-connect-teal.vercel.app",
-    note: "Backend may take 50-60 seconds to wake up due to free-tier limitations.",
-  },
-  {
-    name: "DailyTodos - Task Manager",
-    description: "A to-do app with React, Tailwind CSS, and Redux Toolkit. Features JWT authentication, a FastAPI backend, and PostgreSQL.",
-    link: "https://daily-todos-alpha.vercel.app",
-    note: "Backend may take 50-60 seconds to respond due to free-tier limits.",
-  },
-  {
-    name: "Fraud Detection",
-    description: "Analyzed 6.3M+ records with 99.99% accuracy using Python and machine learning techniques.",
-    link: "https://www.kaggle.com/code/pg11001/fraud-detection-model",
-  },
-  {
-    name: "HR Analytics",
-    description: "Power BI dashboard analyzing employee attrition data to provide actionable insights.",
-    link: "https://github.com/PraveenGupta11001/HR-Analytics-Dashboard",
-  },
-  {
-    name: "Data Pipeline",
-    description: "Developed a pipeline to transfer raw data from AWS S3 to Snowflake. Utilized Python for data download, chunking, and compression, followed by loading and processing in Snowflake for analysis.",
-    link: "https://github.com/PraveenGupta11001/aws_s3_file_to_sf_load",
-  },
-  {
-    name: "Udemy Clone",
-    description: "Developed a platform featuring user login and signup functionalities using Django models, along with a homepage designed with HTML, CSS, and Bootstrap.",
-    link: "https://pg11001.pythonanywhere.com/",
-  },
-  {
-    name: "Vrinda Store Analysis",
-    description: "Analyzed sales data using Excel to generate insights and dashboards. Examined monthly sales distribution, gender-based sales, and order status proportions.",
-    link: "https://github.com/PraveenGupta11001/Vrinda-Store-Sales-Data-Analysis",
-  },
-];
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+
 
 const Home = () => {
   const isDark = useSelector((state) => state.theme.isDark);
@@ -61,9 +24,24 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent! (Placeholder for actual submission)");
-    setFormData({ name: "", email: "", message: "" });
+  
+    emailjs.send(
+      SERVICE_ID,     // service ID, replace this
+      TEMPLATE_ID,    // template ID, replace this
+      formData,              // it should have name, email, message
+      PUBLIC_KEY      // Public key, replace this
+    )
+    .then((result) => {
+      // alert("Message sent successfully!");
+      toast.success("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    })
+    .catch((error) => {
+      alert("Failed to send message. Please try again.");
+      console.error("EmailJS Error:", error);
+    });
   };
+  
 
   return (
     <div className={isDark ? "bg-gray-800" : "bg-gray-100"}>
