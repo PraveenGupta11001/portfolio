@@ -27,12 +27,27 @@ const projects = [
   {
     name: "Fraud Detection",
     description: "Analyzed 6.3M+ records with 99.99% accuracy using Python and machine learning techniques.",
-    link: "#",
+    link: "https://www.kaggle.com/code/pg11001/fraud-detection-model",
   },
   {
     name: "HR Analytics",
     description: "Power BI dashboard analyzing employee attrition data to provide actionable insights.",
-    link: "#",
+    link: "https://github.com/PraveenGupta11001/HR-Analytics-Dashboard",
+  },
+  {
+    name: "Data Pipeline",
+    description: "Developed a pipeline to transfer raw data from AWS S3 to Snowflake. Utilized Python for data download, chunking, and compression, followed by loading and processing in Snowflake for analysis.",
+    link: "https://github.com/PraveenGupta11001/aws_s3_file_to_sf_load",
+  },
+  {
+    name: "Udemy Clone",
+    description: "Developed a platform featuring user login and signup functionalities using Django models, along with a homepage designed with HTML, CSS, and Bootstrap.",
+    link: "https://pg11001.pythonanywhere.com/",
+  },
+  {
+    name: "Vrinda Store Analysis",
+    description: "Analyzed sales data using Excel to generate insights and dashboards. Examined monthly sales distribution, gender-based sales, and order status proportions.",
+    link: "https://github.com/PraveenGupta11001/Vrinda-Store-Sales-Data-Analysis",
   },
 ];
 
@@ -66,7 +81,7 @@ const Home = () => {
             Welcome to My Portfolio
           </h1>
           <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-700"} max-w-2xl mx-auto`}>
-            I'm Praveen Gupta, a Full Stack Web Developer with expertise in React, FastAPI, and data analytics. Explore my skills and projects below!
+            I'm Praveen Gupta, a Full Stack Web Developer with expertise in React, TailwindCSS, FastAPI, Django, MySQL, Postgres SQL and data analytics. Explore my skills and projects below!
           </p>
         </div>
       </motion.section>
@@ -187,13 +202,19 @@ const Home = () => {
               <h3 className={`text-2xl font-semibold ${isDark ? "text-gray-200" : "text-gray-800"}`}>Certifications</h3>
               <ul className={`mt-4 list-none ${isDark ? "text-gray-300" : "text-gray-700"}`}>
                 <li className="flex items-center">
-                  <Award className="h-5 w-5 mr-2 text-purple-500" /> DBT Fundamentals (accredible)
+                  <a href="https://credentials.getdbt.com/155aee3e-52de-4a04-bdbd-f97e408801c5" target="_blank" rel="noopener noreferrer" className={`flex items-center ${isDark ? "text-gray-300 hover:text-purple-400" : "text-gray-700 hover:text-purple-600"}`}>
+                    <Award className="h-5 w-5 mr-2 text-purple-500" /> DBT Fundamentals (accredible)
+                  </a>
                 </li>
                 <li className="flex items-center">
-                  <Award className="h-5 w-5 mr-2 text-purple-500" /> Snowflake Data Warehouse (credly)
+                  <a href="https://www.credly.com/users/praveen-gupta.29e14c6c/badges" target="_blank" rel="noopener noreferrer" className={`flex items-center ${isDark ? "text-gray-300 hover:text-purple-400" : "text-gray-700 hover:text-purple-600"}`}>
+                    <Award className="h-5 w-5 mr-2 text-purple-500" /> Snowflake Data Warehouse (credly)
+                  </a>
                 </li>
                 <li className="flex items-center">
-                  <Award className="h-5 w-5 mr-2 text-purple-500" /> HackerRank - Python, SQL, CSS, Problem Solving
+                  <a href="https://www.hackerrank.com/profile/praweengupta1101" target="_blank" rel="noopener noreferrer" className={`flex items-center ${isDark ? "text-gray-300 hover:text-purple-400" : "text-gray-700 hover:text-purple-600"}`}>
+                    <Award className="h-5 w-5 mr-2 text-purple-500" /> HackerRank - Python, SQL, CSS, Problem Solving
+                  </a>
                 </li>
               </ul>
             </motion.div>
