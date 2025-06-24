@@ -6,6 +6,11 @@ export const projects = [
       note: "Backend may take 50-60 seconds to wake up due to free-tier limitations.",
     },
     {
+      name: "Artistly - Art Marketplace",
+      description: "Artistly is a responsive web application built with Next.js and Tailwind CSS that allows event organizers to onboard, view, and manage performing artists. It features artist profiles, filtering by category, location, and fee, a manager dashboard, and dark/light theme support. The app uses React Context for global state and is deployed on Vercel.",
+      link: "https://artistly-silk.vercel.app",
+    },
+    {
       name: "DailyTodos - Task Manager",
       description: "A to-do app with React, Tailwind CSS, and Redux Toolkit. Features JWT authentication, a FastAPI backend, and PostgreSQL.",
       link: "https://daily-todos-alpha.vercel.app",
