@@ -7,7 +7,7 @@ export const projects = [
     },
     {
       name: "Artistly - Art Marketplace",
-      description: "Artistly is a responsive web application built with Next.js and Tailwind CSS that allows event organizers to onboard, view, and manage performing artists. It features artist profiles, filtering by category, location, and fee, a manager dashboard, and dark/light theme support. The app uses React Context for global state and is deployed on Vercel.",
+      description: "Artistly is a responsive web app built with Next.js and Tailwind CSS. It lets event organizers onboard, filter, and view performing artists. The app includes artist profiles, a dashboard, dark/light theme, and uses React Context for state management.",
       link: "https://artistly-silk.vercel.app",
     },
     {
