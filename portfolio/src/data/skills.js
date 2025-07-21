@@ -1,5 +1,5 @@
 export const skills = [
-    "Python", "JavaScript", "HTML", "CSS", "SQL", "Docker", "Redis", "Celery",
-    "React JS", "Tailwind CSS", "FastAPI", "Django", "PostgreSQL", "MongoDB",
-    "Firebase", "Snowflake", "DBT", "Azure Data Factory", "AWS S3", "Scrum", "Jira",
+    "Python", "JavaScript", "React", "Next.js", "Tailwind CSS", "HTML", "CSS",
+    "FastAPI", "Django", "SQL", "PostgreSQL", "MongoDB", "Firebase",
+    "Docker", "AWS", "Git", "GitHub", "REST APIs", "Web Development"
 ];

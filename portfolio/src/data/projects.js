@@ -6,6 +6,18 @@ export const projects = [
       note: "Backend may take 50-60 seconds to wake up due to free-tier limitations.",
     },
     {
+      name: "TailorTalk Booking",
+      description: "AI-based booking assistant with Streamlit frontend and FastAPI backend (deployed via Render). Uses LangGraph for flow control and Google Calendar API for account-based booking. Operates without LLMs using string filtering and matching through a /chat API.",
+      link: "https://tailortalk-booking.streamlit.app/",
+      note: "Backend may take 50-60 seconds to respond due to free-tier limits.",
+    },
+    {
+      name: "Personal Task Tracker",
+      description: "Multi-user task management app built using React, Vite, and Tailwind CSS. Supports tasks, filters, search, and dark/light mode with persistent data storage via localStorage.",
+      link: "https://github.com/PraveenGupta11001/personal-task-tracker",
+      note: "Backend may take 50-60 seconds to respond due to free-tier limits.",
+    },   
+    {
       name: "Artistly - Art Marketplace",
       description: "Artistly is a responsive web app built with Next.js and Tailwind CSS. It lets event organizers onboard, filter, and view performing artists. The app includes artist profiles, a dashboard, dark/light theme, and uses React Context for state management.",
       link: "https://artistly-silk.vercel.app",
