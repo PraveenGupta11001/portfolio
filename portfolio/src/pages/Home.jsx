@@ -67,50 +67,50 @@ const Home = () => {
 
       {/* Experiences */}
       <motion.section
-  id="experience"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 1 }}
-  className="py-12"
->
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2
-      className={`text-3xl font-bold text-center mb-12 ${
-        isDark ? "text-white" : "text-gray-900"
-      }`}
-    >
-      Professional Experience
-    </h2>
-    <div className="relative border-l-4 border-blue-400">
-      {experiences.map((exp, index) => {
-        const [isOpen, setIsOpen] = useState(false);
-        return (
-          <motion.div
-            key={index}
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
-            onClick={() => setIsOpen(!isOpen)}
-            className={`p-5 rounded-lg shadow-md m-3  cursor-pointer ${
-              isDark ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
+        id="experience"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="py-12"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className={`text-3xl font-bold text-center mb-12 ${
+              isDark ? "text-white" : "text-gray-900"
             }`}
           >
-            <h3
-              
-              className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
-            >
-              {exp.role}
-            </h3>
-            <p className="text-sm text-gray-500">
-              {exp.company} • {exp.duration}
-            </p>
-            {isOpen && <p className="mt-2 leading-relaxed">{exp.description}</p>}
-          </motion.div>
-        );
-      })}
-    </div>
-  </div>
-</motion.section>
+            Professional Experience
+          </h2>
+          <div className="relative border-l-4 border-blue-400">
+            {experiences.map((exp, index) => {
+              const [isOpen, setIsOpen] = useState(false);
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ x: -50, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  onClick={() => setIsOpen(!isOpen)}
+                  className={`p-5 rounded-lg shadow-md m-3  cursor-pointer ${
+                    isDark ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
+                  }`}
+                >
+                  <h3
+                    
+                    className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+                  >
+                    {exp.role}
+                  </h3>
+                  <p className="text-sm text-gray-500">
+                    {exp.company} • {exp.duration}
+                  </p>
+                  {isOpen && <p className="mt-2 leading-relaxed">{exp.description}</p>}
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </motion.section>
 
 
 
