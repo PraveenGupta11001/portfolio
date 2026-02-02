@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: "AI-Doc Chat — LLM Document Search & Chat",
+    description:
+      "An AI-powered document search and chat application that allows users to upload documents and ask questions, with answers generated directly from the document content. Built using FastAPI for the backend and Next.js with Tailwind CSS for the frontend. Implemented retrieval-based search using embeddings and LangChain, with Redis caching to optimize performance and reduce API costs. Fully deployed on Render and Vercel with a production-ready setup.",
+    link: "https://ai-doc-chat-flax.vercel.app/",
+    note: "Backend may take 40–60 seconds to respond initially due to free-tier deployment limitations.",
+  },
+  {
     name: "WeConnect - AI Chat & Social Platform",
     description:
       "A real-time chat and AI chatbot platform built with React, Tailwind CSS, and Firebase OAuth. Backend uses FastAPI with Redis, Celery, and LLaMA 70B model (via Groq) for AI chat. Features include friend circles, Webot AI assistant, JWT-protected routes, and CI/CD. Data stored in Firestore NoSQL.",
