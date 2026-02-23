@@ -2,31 +2,33 @@ export const projects = [
   {
     name: "AI-Doc Chat — LLM Document Search & Chat",
     description:
-      "An AI-powered document search and chat application that allows users to upload documents and ask questions, with answers generated directly from the document content. Built using FastAPI for the backend and Next.js with Tailwind CSS for the frontend. Implemented retrieval-based search using embeddings and LangChain, with Redis caching to optimize performance and reduce API costs. Fully deployed on Render and Vercel with a production-ready setup.",
+      "Document upload and retrieval-based QA system built with FastAPI and LangChain. Implemented embedding-based semantic search with Redis caching. Deployed on Render and Vercel.",
     link: "https://ai-doc-chat-flax.vercel.app/",
     note: "Backend may take 40–60 seconds to respond initially due to free-tier deployment limitations.",
   },
   {
     name: "WeConnect - AI Chat & Social Platform",
     description:
-      "A real-time chat and AI chatbot platform built with React, Tailwind CSS, and Firebase OAuth. Backend uses FastAPI with Redis, Celery, and LLaMA 70B model (via Groq) for AI chat. Features include friend circles, Webot AI assistant, JWT-protected routes, and CI/CD. Data stored in Firestore NoSQL.",
+      "Real-time chat platform built with React and FastAPI. Implemented JWT/OAuth authentication, Redis caching, and AI chatbot integration using LLM APIs. Deployed with CI/CD.",
     link: "https://we-connect-teal.vercel.app",
     note: "Backend may take 50-60 seconds to wake up due to free-tier limitations.",
   },
   {
     name: "TailorTalk Booking",
     description:
-      "AI-based booking assistant with Streamlit frontend and FastAPI backend (Render). Uses LangGraph for flow control and Google Calendar API for account-based booking. Works without LLMs by using string filtering and matching via /chat API.",
+      "AI-based booking assistant using FastAPI backend and Streamlit frontend. Integrated Google Calendar API and implemented structured flow handling for booking automation.",
     link: "https://tailortalk-booking.streamlit.app/",
     note: "Backend may take 50-60 seconds to respond due to free-tier limits.",
   },
   {
     name: "TaskMaster Scrum App",
     description:
-      "Full-stack Scrum-based task manager with Django DRF backend and Next.js frontend. PostgreSQL database hosted on Render, frontend on Vercel. Includes LLM integration for content moderation, abusive word detection, and AI suggestions. CI/CD pipelines implemented.",
+      "Scrum-based task management system built with Django REST Framework and PostgreSQL. Implemented AI-based content moderation and deployed using automated pipelines.",
     link: "https://github.com/PraveenGupta11001/taskmaster-scrum-app",
     note: "Backend may take 50-60 seconds to respond due to free-tier limits.",
   },
+
+
   // {
   //   name: "Personal Task Tracker",
   //   description:

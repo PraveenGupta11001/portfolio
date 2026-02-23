@@ -59,8 +59,9 @@ const Home = () => {
           <h1 className={`text-4xl md:text-5xl font-bold ${isDark ? "text-white" : "text-gray-900"} mb-1`}>
             Welcome to My Portfolio
           </h1>
+          <br />
           <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-700"} max-w-2xl mx-auto`}>
-            I'm Praveen Gupta, a Full Stack Web Developer with expertise in React, TailwindCSS, FastAPI, Django, MySQL, Postgres SQL and data analytics. Explore my skills and projects below!
+            I'm Praveen Gupta, a Full Stack Engineer with 3 years of experience in Django, FastAPI, React, and PostgreSQL, focused on building secure, scalable backend systems and production-ready applications.
           </p>
         </div>
       </motion.section>
@@ -73,7 +74,7 @@ const Home = () => {
         transition={{ duration: 1 }}
         className="py-2"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto pb-4 sm:px-6 lg:px-8">
           <h2
             className={`text-3xl font-bold text-center mb-12 ${
               isDark ? "text-white" : "text-gray-900"
@@ -225,7 +226,7 @@ const Home = () => {
               <ul className={`mt-4 list-disc list-inside ${isDark ? "text-gray-300" : "text-gray-700"}`}>
                 <li>M.C.A. - Arunachal University of Studies - 65% (2023-2025)</li>
                 <li>B.C.A. - MGKVP - 74% (2020-2023)</li>
-                <li>XII - Mahatma JF Public School - 66.8% (2017-2019)</li>
+                {/* <li>XII - Mahatma JF Public School - 66.8% (2017-2019)</li> */}
               </ul>
             </motion.div>
             <motion.div

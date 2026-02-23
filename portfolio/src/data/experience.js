@@ -1,73 +1,38 @@
 export const experiences = [
   {
-    role: "Full Stack Engineer Intern",
-    company: "Deliveryman.ai",
-    duration: "Aug 2025 – Present",
+    role: "Full Stack Engineer",
+    company: "DraftssTech Technologies",
+    duration: "Aug 2025 – Feb 2026",
     points: [
-      "Built and maintained backend services using Django and Django REST Framework for a SaaS email automation platform.",
-      "Designed reusable REST APIs and managed asynchronous workflows using Celery and Redis.",
-      "Implemented real-time status tracking and notifications for long-running background tasks.",
-      "Integrated third-party platforms (Google Sheets, HubSpot, Salesforce, Pipedrive, Zapier) using OAuth 2.0, token refresh, and webhooks.",
-      "Optimized PostgreSQL queries and implemented caching to improve performance.",
-      "Collaborated with frontend engineers using React and TypeScript.",
-      "Configured and monitored AWS services including SNS, SES, CloudWatch, and Route53."
+      "Developed and maintained multi-tenant SaaS platforms (ClientPortalOS, Deliveryman.ai) using Django, Django REST Framework, PostgreSQL, Redis, Celery, and React (TypeScript).",
+      "Optimized REST APIs, reducing response times by ~80% and lowering bandwidth consumption.",
+      "Implemented OAuth 2.0 integrations (Salesforce, HubSpot, Google Sheets, Pipedrive, Zapier, n8n) with secure refresh-token handling.",
+      "Built and maintained Zapier connectors with webhook automation flows.",
+      "Configured AWS services including SNS, SES, CloudWatch, and Route53, and monitored production using Sentry.",
+      "Collaborated across frontend and backend teams to deliver production-ready features."
     ],
   },
   {
-    role: "Full Stack Engineer Intern",
-    company: "ClientPortalOS",
-    duration: "Aug 2025 – Present",
+    role: "Software Developer",
+    company: "Hayara IT Services",
+    duration: "Jun 2023 – Dec 2024",
     points: [
-      "Developed backend features for a multi-tenant SaaS platform using Django.",
-      "Implemented tenant-aware models, views, and permission logic to ensure secure data isolation.",
-      "Built authentication and authorization flows with role-based access control.",
-      "Optimized PostgreSQL queries and improved performance using caching.",
-      "Handled background jobs using Celery and Redis.",
-      "Monitored and resolved production issues using Sentry."
+      "Developed backend services using FastAPI and PostgreSQL with optimized ORM-based query handling.",
+      "Reduced API response latency by 40–60% through caching strategies and database query optimization.",
+      "Built full-stack SaaS applications using React.js and Tailwind CSS.",
+      "Designed scalable REST APIs and implemented secure authentication using JWT and OAuth flows.",
+      "Developed ETL pipelines using DBT, Snowflake, and Azure Data Factory.",
+      "Integrated AWS S3 and Azure Blob Storage with backend systems.",
+      "Managed deployments using Render and Vercel with CI/CD pipelines and monitoring."
     ],
   },
   {
-    role: "Full Stack Engineer Intern",
-    company: "Draftss",
-    duration: "Aug 2025 – Present",
-    points: [
-      "Worked on AI-driven web applications using Django and React.",
-      "Integrated REST APIs and developed full-stack features.",
-      "Deployed applications on VPS using Docker.",
-      "Collaborated via Git-based workflows, code reviews, and agile practices.",
-      "Gained experience building scalable production systems."
-    ],
-  },
-  {
-    role: "Full Stack Developer (Freelance)",
-    company: "Self-Employed",
-    duration: "Apr 2024 – Jan 2025",
-    points: [
-      "Delivered SaaS products, AI chat platforms, and task management tools.",
-      "Built applications using React, Next.js, Tailwind CSS, FastAPI, and Django DRF.",
-      "Worked with PostgreSQL, Firebase, Redis, and Docker.",
-      "Integrated LLMs (LLaMA 70B via Groq) and implemented CI/CD workflows."
-    ],
-  },
-  {
-    role: "Jr. Data Engineer",
-    company: "Hayara IT Service Pvt Ltd",
-    duration: "Jun 2023 – Mar 2024",
-    points: [
-      "Developed frontend and backend features for e-commerce platforms.",
-      "Built responsive UIs using React and Tailwind CSS.",
-      "Optimized backend APIs using FastAPI.",
-      "Integrated payment gateways and managed databases on cloud platforms."
-    ],
-  },
-  {
-    role: "Frontend Engineer Intern",
+    role: "Software Engineer Intern",
     company: "Logic Inventor Technologies",
     duration: "Apr 2019 – Jan 2020",
     points: [
-      "Built responsive UI components using HTML, CSS, JavaScript, and React.",
-      "Improved UI performance and user experience.",
-      "Collaborated closely with backend teams for API integration."
+      "Created responsive, user-friendly web interfaces using HTML, CSS, JavaScript, React.js, and Tailwind CSS.",
+      "Worked closely with backend developers to integrate APIs and ensure seamless UI performance."
     ],
   },
-];  
+];
