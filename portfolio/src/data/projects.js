@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: "PayPilot AI — Enterprise Payroll, HR & Employee Self-Service Platform",
+    description:
+      "Enterprise payroll and HR SaaS platform featuring role-based Employer and Employee portals, OAuth 2.0 integrations, asynchronous email workflows, and a modern React 19 frontend. Built with FastAPI, PostgreSQL, and Tailwind CSS, with comprehensive test coverage using TDD.",
+    link: "https://payroll-saas-omega.vercel.app/",
+    note: "Implemented secure dual-role authentication, Slack & Jira OAuth (PKCE), async SMTP onboarding emails with OTP verification, and achieved 100% unit test coverage for core authentication modules.",
+  },
+  {
     name: "AI-Doc Chat — LLM Document Search & Chat",
     description:
       "Document upload and retrieval-based QA system built with FastAPI and LangChain. Implemented embedding-based semantic search with Redis caching. Deployed on Render and Vercel.",

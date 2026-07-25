@@ -1,5 +1,16 @@
 export const experiences = [
   {
+    role: "AI Engineer",
+    company: "Chirpn IT Solutions LLP",
+    duration: "May 2026 – Jun 2026",
+    points: [
+      "Architected and maintained a multi-tenant OAuth 2.0 integration layer for Perceivenow.ai using FastAPI, integrating Klaviyo, Wix, Apollo.io, Hugging Face, GitHub, and Jira with secure token refresh and credential management.",
+      "Engineered agentic AI workflows, LLM-powered features, and RAG pipelines, building prompt orchestration and tool-calling chains to generate actionable insights from connected data sources.",
+      "Developed full-stack product features using React, Next.js, Supabase Auth, and PostgreSQL, while defining frontend-to-API contracts and implementing structured logging with Sentry.",
+      "Led end-to-end solution design for AI features, including architecture planning, database schema design, implementation, testing, and production deployment."
+    ],
+  },
+  {
     role: "Full Stack Engineer",
     company: "DraftssTech Technologies",
     duration: "Aug 2025 – Feb 2026",

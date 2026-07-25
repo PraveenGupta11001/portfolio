@@ -61,7 +61,7 @@ const Home = () => {
           </h1>
           <br />
           <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-700"} max-w-2xl mx-auto`}>
-            I'm Praveen Gupta, a Full Stack Engineer with 3 years of experience in Django, FastAPI, React, and PostgreSQL, focused on building secure, scalable backend systems and production-ready applications.
+            I'm Praveen Gupta, a Backend & AI Engineer with 3 years of experience building scalable SaaS platforms, REST APIs, and AI-powered applications using Python, FastAPI, Django, React, and PostgreSQL.
           </p>
         </div>
       </motion.section>
@@ -213,7 +213,13 @@ const Home = () => {
             >
               <h3 className={`text-2xl font-semibold ${isDark ? "text-gray-200" : "text-gray-800"}`}>Professional Summary</h3>
               <p className={`mt-4 ${isDark ? "text-gray-300" : "text-gray-700"}`}>
-                Full Stack Web Developer with 2+ years of experience in building responsive web applications using React JS, Tailwind CSS, FastAPI, and Django. Skilled in Docker, Redis, Celery, Scrum, and Jira.
+                Full-stack and AI engineer with ~3 years of experience designing and shipping production-grade SaaS platforms,
+                REST APIs, and LLM-powered systems. Specialise in Python (FastAPI, Django), React/Next.js, and agentic AI
+                workflows (LangChain, LangGraph, RAG). Built and optimised multi-tenant backends serving live customers,
+                delivered up to 80% API performance gains, and architected OAuth 2.0 integrations with CRMs, payment
+                platforms, and developer tools. Comfortable owning systems end-to-end — from solution design and database
+                schema to CI/CD pipelines and production monitoring. Targeting high-growth product companies, AI startups, and
+                remote-first engineering teams.
               </p>
             </motion.div>
             <motion.div
@@ -270,7 +276,7 @@ const Home = () => {
           <h2 className={`text-3xl font-bold text-center ${isDark ? "text-white" : "text-gray-900"} mb-8`}>
             Contact Me
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             <motion.div
               initial={{ x: -100 }}
               animate={{ x: 0 }}
@@ -305,7 +311,7 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               className={`p-6 rounded-lg ${isDark ? "bg-gray-700" : "bg-white"} shadow-lg`}
             >
-              <form className="space-y-4" onSubmit={handleSubmit}>
+              {/* <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label className={`block text-sm font-medium ${isDark ? "text-gray-300" : "text-gray-700"}`}>Name</label>
                   <input
@@ -349,7 +355,7 @@ const Home = () => {
                 >
                   Send Message
                 </button>
-              </form>
+              </form> */}
             </motion.div>
           </div>
         </div>
