@@ -25,24 +25,24 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     emailjs.send(
       SERVICE_ID,     // service ID, replace this
       TEMPLATE_ID,    // template ID, replace this
       formData,              // it should have name, email, message
       PUBLIC_KEY      // Public key, replace this
     )
-    .then((result) => {
-      // alert("Message sent successfully!");
-      toast.success("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
-    })
-    .catch((error) => {
-      alert("Failed to send message. Please try again.");
-      console.error("EmailJS Error:", error);
-    });
+      .then((result) => {
+        // alert("Message sent successfully!");
+        toast.success("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      });
   };
-  
+
 
   return (
     <div className={isDark ? "bg-gray-800" : "bg-gray-100"}>
@@ -61,7 +61,7 @@ const Home = () => {
           </h1>
           <br />
           <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-700"} max-w-2xl mx-auto`}>
-            I'm Praveen Gupta, a Backend & AI Engineer with 3 years of experience building scalable SaaS platforms, REST APIs, and AI-powered applications using Python, FastAPI, Django, React, and PostgreSQL.
+            I'm Praveen Gupta, a Backend, Full Stack, and AI/GenAI Engineer with ~3 years of experience building production-grade SaaS platforms, REST APIs, and LLM-powered agentic systems using Python, FastAPI, Django, React/Next.js, and PostgreSQL.
           </p>
         </div>
       </motion.section>
@@ -76,9 +76,8 @@ const Home = () => {
       >
         <div className="max-w-7xl mx-auto pb-4 sm:px-6 lg:px-8">
           <h2
-            className={`text-3xl font-bold text-center mb-12 ${
-              isDark ? "text-white" : "text-gray-900"
-            }`}
+            className={`text-3xl font-bold text-center mb-12 ${isDark ? "text-white" : "text-gray-900"
+              }`}
           >
             Professional Experience
           </h2>
@@ -93,9 +92,8 @@ const Home = () => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   onClick={() => setIsOpen(!isOpen)}
-                  className={`p-5 rounded-lg shadow-md m-3 cursor-pointer ${
-                    isDark ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
-                  }`}
+                  className={`p-5 rounded-lg shadow-md m-3 cursor-pointer ${isDark ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
+                    }`}
                 >
                   <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                     {exp.role}
@@ -230,9 +228,8 @@ const Home = () => {
             >
               <h3 className={`text-2xl font-semibold ${isDark ? "text-gray-200" : "text-gray-800"}`}>Education</h3>
               <ul className={`mt-4 list-disc list-inside ${isDark ? "text-gray-300" : "text-gray-700"}`}>
-                <li>M.C.A. - Arunachal University of Studies - 65% (2023-2025)</li>
-                <li>B.C.A. - MGKVP - 74% (2020-2023)</li>
-                {/* <li>XII - Mahatma JF Public School - 66.8% (2017-2019)</li> */}
+                <li>Master of Computer Applications (MCA) – Arunachal University of Studies</li>
+                <li>Bachelor of Computer Applications (BCA) – Mahatma Gandhi Kashi Vidhypeeth University</li>
               </ul>
             </motion.div>
             <motion.div

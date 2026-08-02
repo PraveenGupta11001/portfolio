@@ -27,7 +27,7 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className={`mt-4 text-lg md:text-xl ${isDark ? "text-gray-300" : "text-gray-700"}`}
         >
-          Backend-Focused Python Engineer | FastAPI, Django & React | AI/LLM Systems | OAuth 2.0 | AWS
+          Backend Engineer | Full Stack Engineer | AI / GenAI Engineer
         </motion.p>
         <motion.div
           initial={{ y: 50 }}
