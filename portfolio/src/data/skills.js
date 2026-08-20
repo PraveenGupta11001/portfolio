@@ -29,17 +29,27 @@ export const skills = [
   { name: "LLM Workflows", category: "AI Architectures", icon: "Brain" },
   { name: "Vector Databases", category: "AI Storage", icon: "Database" },
   { name: "Prompt Engineering", category: "LLM Interaction", icon: "MessageSquareCode" },
+  { name: "Tool Calling", category: "LLM Interaction", icon: "Wrench" },
+  { name: "Azure AI Foundry (GPT-4.1-mini, Foundry Agents, Azure AI Search)", category: "AI Platform", icon: "Cloud" },
 
   // Databases
   { name: "PostgreSQL", category: "Database", icon: "Database" },
   { name: "MySQL", category: "Database", icon: "Database" },
   { name: "Snowflake", category: "Cloud Warehouse", icon: "Cloud" },
+  { name: "Schema Design", category: "Database Design", icon: "GitBranch" },
+  { name: "Indexing", category: "Database Optimisation", icon: "List" },
+  { name: "Query Optimisation", category: "Database Optimisation", icon: "Zap" },
+  { name: "Vector-Search-Ready Design", category: "Database Architecture", icon: "Search" },
 
   // DevOps & Cloud
   { name: "Docker", category: "Containerization", icon: "Box" },
-  { name: "GitHub Actions", category: "CI/CD Pipeline", icon: "RotateCw" },
+  { name: "GitHub Actions (CI/CD)", category: "CI/CD Pipeline", icon: "RotateCw" },
   { name: "AWS", category: "Cloud Provider", icon: "CloudLightning" },
-  { name: "Azure", category: "Cloud Provider", icon: "Cloud" },
+  { name: "Azure (VMs, ACR, Key Vault, VNets)", category: "Cloud Provider", icon: "Cloud" },
+  { name: "Azure Blob Storage", category: "Cloud Storage", icon: "Database" },
+  { name: "Azure Data Factory", category: "Cloud ETL", icon: "Workflow" },
+  { name: "Nginx", category: "Web Server", icon: "Server" },
+  { name: "Cloudflare / Cloudflare Tunnel", category: "Cloud Network", icon: "Shield" },
   { name: "Sentry", category: "Observability/Logging", icon: "Activity" },
 
   // Integrations
@@ -52,7 +62,8 @@ export const skills = [
   { name: "Zapier", category: "Automation", icon: "Workflow" },
   { name: "n8n", category: "Automation", icon: "Workflow" },
   { name: "Webhook Automation", category: "Integration", icon: "Webhook" },
-  { name: "Apollo", category: "Integration", icon: "Link" },
+  { name: "Apollo.io", category: "Integration", icon: "Link" },
   { name: "Klaviyo", category: "Integration", icon: "Link2" },
-  { name: "Wix", category: "Integration", icon: "Laptop" }
+  { name: "Wix", category: "Integration", icon: "Laptop" },
+  { name: "Hugging Face", category: "AI Integration", icon: "Smile" }
 ];
